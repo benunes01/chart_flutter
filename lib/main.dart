@@ -1,4 +1,5 @@
 import 'package:chart_flutter/store/main_controller.dart';
+import 'package:chart_flutter/util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:syncfusion_flutter_core/core.dart';
@@ -9,7 +10,7 @@ import 'charts/circular/circular_chart.dart';
 
 Future<void> main() async {
   SyncfusionLicense.registerLicense(
-      'NT8mJyc2IWhia31hfWN9Z2doa3xgY3xhY2Fjc2ppZ2tpZ2JzEh5oMTYMPSY9NiAMIzo9OzY6ITwTOzwnPjI6P30wPD4=');
+      tokenSync);
   runApp(MyApp());
 }
 
